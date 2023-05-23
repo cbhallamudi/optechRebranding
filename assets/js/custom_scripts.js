@@ -1,4 +1,4 @@
-var container = document.getElementById('container')
+var container = document.getElementById('services_container')
 var slider = document.getElementById('slider');
 var slides = document.getElementsByClassName('slide').length;
 var buttons = document.getElementsByClassName('btn');
@@ -29,7 +29,7 @@ function setParams(w) {
             if (w < 1101) {
                 slidesPerPage = 3;
             } else {
-                slidesPerPage = 4;
+                slidesPerPage = 3;
             }
         }
     }

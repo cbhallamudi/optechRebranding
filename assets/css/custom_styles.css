@@ -250,3 +250,53 @@ h3.title{
 	line-height: 15px;
 	color: #000313;
 }
+
+#user-data{
+	background-image: url("../images/custom-images/user-data_bg_1.png");
+	background-size: cover;
+}
+
+.user-data-section-img-container{
+/*	height: 330px;*/
+/*	width: 450px;*/
+	padding: 5px 0px 5px 10px;
+	background-color: #fff;
+	-webkit-filter: drop-shadow(10px 16px 20px rgba(0, 0, 0, 0.04));
+	        filter: drop-shadow(10px 16px 20px rgba(0, 0, 0, 0.04));
+	box-shadow: 10px 16px 20px rgba(0, 0, 0, 0.04);
+	border-radius: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#user-experience{
+	background-image: url("../images/custom-images/userXP_bg.png");
+	background-size: 100% 100%;
+}
+#growth-marketing{
+	background-image: url("../images/custom-images/growth-marketing_bg.png");
+	background-size: cover;
+}
+#in-house-development{
+	background-image: url("../images/custom-images/in-house-development_bg.png");
+	background-size: 100% 100%;
+}
+
+.swiper-slide {
+  height: 300px;
+  display: flex;
+  background: #eee;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms linear;
+  transform: scale(0.8);
+}
+.swiper-slide.swiper-slide-active {
+  transform: scale(1) translateY(-20%);
+  background: #fc0;
+}
+
+.swiper-slide__content {
+  height: 300px;
+}

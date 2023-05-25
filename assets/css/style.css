@@ -353,6 +353,10 @@ p {
   color: var(--color-body);
   margin: 0 0 40px;
 }
+
+address p{
+  color: white;
+}
 @media only screen and (max-width: 767px) {
   p {
     margin: 0 0 20px;
@@ -9103,6 +9107,14 @@ a {
   outline: none;
 }
 
+address + a{
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 a:hover,
 a:focus,
 a:active {
@@ -10921,7 +10933,7 @@ body {
 .bg-footer-one {
   background-repeat: no-repeat;
   background-size: cover;
-  background: #0E1422;
+/*  background: #0E1422;*/
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -16905,10 +16917,13 @@ a.rts-read-more:hover i {
 }
 
 .rts-contact-fluid {
-  box-shadow: 0px 24px 39px rgba(0, 0, 0, 0.05);
+  background: #F8F8F8;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+  border-radius: 6px 0px 0px 6px;
 }
 .rts-contact-fluid .form-wrapper {
-  width: 80%;
+/*  width: 80%;*/
   margin: auto;
 }
 @media only screen and (max-width: 575px) {
@@ -16936,7 +16951,7 @@ a.rts-read-more:hover i {
   }
 }
 .rts-contact-fluid .form-wrapper form .name-email input {
-  width: 48.8%;
+/*  width: 48.8%;*/
   padding-left: 25px;
 }
 @media only screen and (max-width: 767px) {
@@ -16945,7 +16960,7 @@ a.rts-read-more:hover i {
   }
 }
 .rts-contact-fluid .form-wrapper input {
-  background: #F6F6F6;
+  background: #FFFFFF;
   height: 55px;
   border-radius: 15px;
   margin-bottom: 25px;
@@ -16957,11 +16972,12 @@ a.rts-read-more:hover i {
 }
 .rts-contact-fluid .form-wrapper textarea {
   height: 150px;
-  background: #F6F6F6;
+  background: #FFFFFF;
   border-radius: 15px;
   padding: 15px 15px;
   border: 1px solid transparent;
   padding-left: 25px;
+  margin: 0 30px;
 }
 .rts-contact-fluid .form-wrapper textarea:focus {
   border: 1px solid var(--color-primary);

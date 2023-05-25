@@ -99,7 +99,7 @@ $(document).ready(function() {
     roundLengths: true,
     loop: true,
     loopedSlides: 5,
-    spaceBetween: 10,
+    spaceBetween: 50,
     loopAdditionalSlides: 30,
     autoplay: {
         delay: 100000000000000,
@@ -123,5 +123,9 @@ $(document).ready(function() {
             spaceBetween: 10,
         }
     }
+  });
+
+  mySwiper.on('transitionEnd', function() {
+    console.log('*** mySwiper.realIndex', mySwiper.realIndex);
   });
 });

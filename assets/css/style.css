@@ -9107,12 +9107,18 @@ a {
   outline: none;
 }
 
-address + a{
+address ~ a{
   color: white;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
+}
+
+address ~ a:hover, address ~ a:focus,
+address ~ a:active{
+  color: var(--color-heading-1);
 }
 
 a:hover,
